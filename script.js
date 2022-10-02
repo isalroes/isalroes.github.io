@@ -121,8 +121,6 @@ function btnCopiar() {
     navigator.clipboard.writeText(textoCopiado);
     document.getElementById("idTBResultado").style.visibility = "hidden";
     document.getElementById("idBtnCopiar").style.visibility = "hidden";
-    /*document.getElementById("idMensaje01").style.visibility = "visible";
-    document.getElementById("idMensaje02").style.visibility = "visible";*/
     document.getElementById("idMunieco").style.visibility = "visible";
     document.getElementById("idTBResultado").value="";
     document.getElementById("idTBResultado").style.visibility = "hidden";
