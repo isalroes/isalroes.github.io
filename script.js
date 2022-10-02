@@ -10,8 +10,9 @@ function ocultarMunieco() {
         document.getElementById("idMensaje01").style.visibility = "visible";
         document.getElementById("idMensaje02").style.visibility = "visible";
         document.getElementById("idMunieco").style.visibility = "hidden";
-        document.getElementById("idTBResultado").style.value = "";
+        document.getElementById("idTBResultado").value = "";
         document.getElementById("idTBResultado").style.visibility = "hidden";
+        document.getElementById("idBtnCopiar").style.visibility = "hidden";
     }
     else
     {
@@ -22,6 +23,7 @@ function ocultarMunieco() {
             document.getElementById("idMensaje02").style.visibility = "hidden";
             document.getElementById("idTBResultado").value = mensajeEncriptado;
             document.getElementById("idTBResultado").style.visibility = "visible";
+            document.getElementById("idBtnCopiar").style.visibility = "visible";
             mensaje = ""
             document.getElementById("idTBMensaje").value = "";
             accion = "";
@@ -33,6 +35,7 @@ function ocultarMunieco() {
             document.getElementById("idMensaje02").style.visibility = "hidden";
             document.getElementById("idTBResultado").value = mensajeInicial;
             document.getElementById("idTBResultado").style.visibility = "visible";
+            document.getElementById("idBtnCopiar").style.visibility = "visible";
             mensajeEncriptado = ""
             document.getElementById("idTBMensaje").value = "";
             accion = "";
@@ -110,4 +113,19 @@ function btnEncriptar() {
 function btnDesencriptar () {
     accion = "Desencriptar";
     ocultarMunieco();    
+}
+
+function btnCopiar() {
+    var textoCopiado = "";
+    textoCopiado = document.getElementById("idTBResultado").value;
+    navigator.clipboard.writeText(textoCopiado);
+    
+    document.getElementById("idTBResultado").style.visibility = "hidden";
+    document.getElementById("idBtnCopiar").style.visibility = "hidden";
+    /*document.getElementById("idMensaje01").style.visibility = "visible";
+    document.getElementById("idMensaje02").style.visibility = "visible";*/
+    document.getElementById("idMunieco").style.visibility = "visible";
+    document.getElementById("idTBResultado").value="";
+    document.getElementById("idTBResultado").style.visibility = "hidden";
+    alert("Se copio al portapapeles el texto: "+textoCopiado);
 }
