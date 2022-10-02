@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Challenge - ONE - Desencriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="caja-logo-alura">
+            <img src="imagenes/logo-alura.png" class="logo-alura" alt="Logo de Alura - Letra a">
+        </div>
+        
+        <section>
+            <label for="mensaje" class="etiqueta-mensaje">Texto a Encriptar</label>
+            <textarea cols="60" rows="15" id="idTBMensaje" class="input-mensaje" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="botonera">
+                <button class="boton-encriptar" onclick="btnEncriptar()">¡Encriptar!</button>
+                <button class="boton-desencriptar" onclick="btnDesencriptar()">¡Desencriptar!</button>
+            </div>        
+        </section>
+
+        <section>
+            <div class="resultado">
+                <textarea cols="60" rows="15" id="idTBResultado" class="output-mensaje"></textarea>
+                <ul>
+                    <li><img src="imagenes/muñeco.png" class="munieco" id="idMunieco" alt="Diseño de persona buscando"></li>                    
+                </ul>
+            </div>
+            <div class="mensajes-resultado">
+                <ul>
+                    <li id=idMensaje01 class="mensaje-01">Ningun mensaje fue encontrado</li>
+                    <li id=idMensaje02 class="mensaje-02">Ingresa el texto que deseeas encriptar o desencriptar</li>
+                </ul>
+            </div>            
+        </section>
+    </main>
+    
+    <footer>
+        <p class="copyright">&copy Copyright Isaac Alberto Rodríguez Espadas - 2022</p>
+    </footer>
+</body>
+</html>
+
