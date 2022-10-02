@@ -52,6 +52,41 @@ body{
     color: #0A3871;
 }
 
+.divAviso{
+    display: flex;
+    /*flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;*/
+    gap: 12px;
+    position: absolute;
+    width: 320px;
+    height: 20px;
+    left: 245px;
+    top: calc(84%);
+}
+
+.aviso{
+    /*position: absolute;
+    width: 531px;
+    height: 480px;
+    left: 240px;
+    top: 168px;*/
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #888888;
+    
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.imgAviso{
+    left: 24px;
+    /*top: */
+}
+
 .input-mensaje{
     position: absolute;
     left: 240px;
